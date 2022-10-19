@@ -454,6 +454,13 @@ LABEL_TOOL_TOKEN="Token token_value"
 在【模型列表】页面，点击【下载】按钮，下载文件格式为tar包，包含模型的网络结构、为网络权重、超参数配置文件、训练的环境参数及结果，如下图所示：
 
 ![模型下载](https://github.com/IndustryEssentials/ymir-images/blob/main/doc_images/%E6%A8%A1%E5%9E%8B%E4%B8%8B%E8%BD%BD.jpeg)
+  
+## 3.3. 模型部署
+
+用户可以定好算法模型后去选择要部署的设备，也可以定好设备后去选择要部署的算法。同时，用户可以对自己的算法、设备和部署历史进行查看管理。
+
+## 3.4. 部署相机
+  
 
 # 4. 进阶版：Ymir-CMD line使用指南
 
