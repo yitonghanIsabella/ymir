@@ -302,6 +302,37 @@ The user can access label studio through the default URL [http://localhost:12007
   ```sh
 docker-compose -f docker-compose.label_studio.yml down
   ```
+  
+## 2.4. Installation of **ModelDeployment** (optional)
+
+**ModelDeployment** is also an external model deployment system supported by YMIR and can be installed as an alternative model deployment tool.
+
+1. In the YMIR directory, modification Env file, configure ModelDeployment port and MySQL password：
+
+```
+DEPLOY_MODULE_HOST_PORT=18801
+DEPLOY_MODULE_URL=${DEPLOY_MODULE_HOST_PORT}
+DEPLOY_MODULE_MYSQL_ROOT_PASSWORD=deploy_db_passwd
+```
+
+2. Start the installation of ModelDeployment command:
+
+  ```sh
+docker-compose -f docker-compose.modeldeploy.yml up -d
+  ```
+
+3. Check the status of ModelDeployment:
+
+  ```sh
+docker-compose -f docker-compose.modeldeploy.yml ps
+  ```
+
+4. The command to stop the ModelDeployment service is:
+
+  ```sh
+docker-compose -f docker-compose.modeldeploy.yml down
+  ```
+
 
 # 3. Use YMIR-GUI: typical model production process
 
