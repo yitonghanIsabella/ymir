@@ -73,7 +73,6 @@ YMIR平台
 - 优化代码结构；
 - 新增模型部署模块；
 
-Docker
 
 Docker
 - 支持 [yolov5](https://github.com/ultralytics/yolov5)
