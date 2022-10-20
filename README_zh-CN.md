@@ -110,7 +110,6 @@ Docker
   - [2.1. 环境依赖](#21-%E7%8E%AF%E5%A2%83%E4%BE%9D%E8%B5%96)
   - [2.2. 安装 YMIR-GUI](#22-%E5%AE%89%E8%A3%85-ymir-gui)
   - [2.3. 安装配置LabelStudio （可选）](#23-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AElabelstudio-%E5%8F%AF%E9%80%89)
-  - [2.4. 安装配置ModelDeployment （可选）](#24-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AEmodeldeployment-%E5%8F%AF%E9%80%89)
 - [3. GUI使用-典型模型生产流程](#3-gui%E4%BD%BF%E7%94%A8-%E5%85%B8%E5%9E%8B%E6%A8%A1%E5%9E%8B%E7%94%9F%E4%BA%A7%E6%B5%81%E7%A8%8B)
   - [3.1. 标签管理](#31-%E6%A0%87%E7%AD%BE%E7%AE%A1%E7%90%86)
   - [3.2. 项目管理](#32-项目管理)
