@@ -154,7 +154,7 @@ Docker
 YMIR(You Mine In Recursion)是一个简化的模型开发产品，专注于AI SUITE开源系列中的数据集版本和模型迭代。
 
 <div align="center">
-  <img src="https://github.com/yitonghanIsabella/ymir-images/blob/main/doc_images/processing.png" width="800"/>
+  <img src="https://github.com/yitonghanIsabella/ymir-images/blob/main/doc_images/processing2.png" width="800"/>
 <div>&nbsp;</div>&nbsp;</div>
 
 目前人工智能商业化在算力、算法和技术方面达到阶段性成熟。AI应用在产品落地过程中经常会遇到无法大规模扩展的瓶颈，例如人才紧缺、开发成本高、迭代周期长等问题。
