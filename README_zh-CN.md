@@ -87,7 +87,7 @@ Docker
 
 查看更多内容 [ymir-executor-fork](https://github.com/modelai/ymir-executor-fork) 
 
-更多代码更新 [ymir-dev](https://github.com/modelai/ymir-executor-fork/tree/ymir-dev
+更多代码更新 [ymir-dev](https://github.com/modelai/ymir-executor-fork/tree/ymir-dev)
 
 ## 简介
 
