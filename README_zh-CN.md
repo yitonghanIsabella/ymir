@@ -74,10 +74,10 @@ YMIR平台
 - 新增模型部署模块；
 
 Docker
-- 支持 [yolov5](youdaoyzbx/ymir-executor:ymir1.3.0-yolov5-cu111-tmi)
-- 支持 [mmdetection](youdaoyzbx/ymir-executor:ymir1.3.0-mmdet-cu111-tmi)
-- 支持 [yolov5-v6.2的训练镜像](youdaoyzbx/ymir-executor:ymir1.3.0-yolov5-v6.2-cu111-tmi)
-- 支持 [rv1126芯片部署的yolov5训练镜像](youdaoyzbx/ymir-executor:ymir1.3.0-yolov5-cu111-modelstore)
+
+Docker
+- 支持 [yolov5](https://github.com/ultralytics/yolov5)
+- 支持 [mmdetection](https://github.com/open-mmlab/mmdetection)
 - 支持 [yolov7](https://github.com/wongkinyiu/yolov7)
 - 支持 [detectron2](https://github.com/facebookresearch/detectron2)
 - 支持 [An Extendable, Efficient and Effective Transformer-based Object Detector](https://github.com/naver-ai/vidt)
@@ -86,6 +86,12 @@ Docker
 - 支持 [ymir镜像开发扩展库](https://github.com/modelai/ymir-executor-sdk)
 
 查看更多内容 [ymir-executor-fork](https://github.com/modelai/ymir-executor-fork) 
+
+在公共镜像内
+- 更新yolov5训练镜像：youdaoyzbx/ymir-executor:ymir1.3.0-yolov5-cu111-tmi
+- 更新mmdetection训练镜像：youdaoyzbx/ymir-executor:ymir1.3.0-mmdet-cu111-tmi
+- 更新支持rv1126芯片部署的yolov5训练镜像：youdaoyzbx/ymir-executor:ymir1.3.0-yolov5-cu111-modelstore
+- 更新支持yolov5-v6.2的训练镜像：youdaoyzbx/ymir-executor:ymir1.3.0-yolov5-v6.2-cu111-tmi
 
 更多代码更新 [ymir-dev](https://github.com/modelai/ymir-executor-fork/tree/ymir-dev)
 
@@ -299,6 +305,32 @@ LABEL_TOOL_TOKEN="Token token_value"
 5. 停止label studio服务命令如下：
 
 `docker-compose -f docker-compose.label_studio.yml down`
+  
+  
+## 2.4. 安装配置 ModelDeployment （可选）
+
+ModelDeployment 是YMIR所支持的模型部署系统，可以作为备选模型部署工具安装。
+
+1. 在上一节的YMIR目录下，修改.env文件，配置 ModelDeployment 端口和 MySQL 访问密码：
+
+```
+DEPLOY_MODULE_HOST_PORT=18801
+DEPLOY_MODULE_URL=${DEPLOY_MODULE_HOST_PORT}
+DEPLOY_MODULE_MYSQL_ROOT_PASSWORD=deploy_db_passwd
+```
+
+2. 启动安装 ModelDeployment 命令如下：
+
+`docker-compose -f docker-compose.modeldeploy.yml up -d`
+
+3. 完成后查看 ModelDeployment 状态命令如下：
+
+`docker-compose -f docker-compose.modeldeploy.yml ps`
+
+4. 停止 ModelDeployment 服务命令如下：
+
+`docker-compose -f docker-compose.modeldeploy.yml down`
+ 
 
 # 3. GUI使用-典型模型生产流程
 
