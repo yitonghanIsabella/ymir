@@ -74,13 +74,19 @@ YMIR平台
 - 新增模型部署模块；
 
 Docker
-- 支持 [yolov5](https://github.com/ultralytics/yolov5)
-- 支持 [mmdetection](https://github.com/open-mmlab/mmdetection)
+- 支持 [yolov5](youdaoyzbx/ymir-executor:ymir1.3.0-yolov5-cu111-tmi)
+- 支持 [mmdetection](youdaoyzbx/ymir-executor:ymir1.3.0-mmdet-cu111-tmi)
+- 支持 [yolov5-v6.2的训练镜像](youdaoyzbx/ymir-executor:ymir1.3.0-yolov5-v6.2-cu111-tmi)
+- 支持 [rv1126芯片部署的yolov5训练镜像](youdaoyzbx/ymir-executor:ymir1.3.0-yolov5-cu111-modelstore)
 - 支持 [yolov7](https://github.com/wongkinyiu/yolov7)
 - 支持 [detectron2](https://github.com/facebookresearch/detectron2)
 - 支持 [An Extendable, Efficient and Effective Transformer-based Object Detector](https://github.com/naver-ai/vidt)
+- 支持 [ymir镜像测试工具库](https://github.com/modelai/ymir-executor-verifier)
+- 支持 [demo 示例镜像制作文档](https://github.com/modelai/ymir-executor-fork/tree/ymir-dev/det-demo-tmi)
+- 支持 [ymir镜像开发扩展库](https://github.com/modelai/ymir-executor-sdk)
 
 查看更多内容 [ymir-executor-fork](https://github.com/modelai/ymir-executor-fork) 
+更多代码更新 [ymir-dev](https://github.com/modelai/ymir-executor-fork/tree/ymir-dev
 
 ## 简介
 
